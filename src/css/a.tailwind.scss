@@ -418,3 +418,56 @@ button {
     transition-delay: .35s;
     margin-top: 0;
 }
+
+
+.logoName-2 {
+    display: none;
+}
+
+.learn_more {
+    &:hover img {
+        position: relative;
+        animation: right 0.5s ease-out infinite;
+    }
+}
+
+@keyframes right {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 5px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@media (max-width: 460px) {
+    .text-base {
+        font-size: 10px !important;
+    }
+    .title-md {
+        font-size: 14px;
+    }
+    .main-paragraph {
+        font-size: 12px;
+    }
+    nav {
+        .logoName-1 {
+            display: none;
+        }
+        .logoName-2 {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .title-xl {
+        font-size: 48px !important;
+    }
+    .footer-text {
+        font-size: 36px !important;
+    }
+}
