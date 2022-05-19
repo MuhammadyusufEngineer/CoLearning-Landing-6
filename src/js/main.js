@@ -16,6 +16,30 @@ anchor.forEach(item => {
   }
 })
 
+// move elements on mousemove event triggered
+document.addEventListener('mousemove', parallax)
+
+function parallax( e ){
+  this.querySelectorAll('.layer').forEach( layer => {
+    const speed = layer.getAttribute('data-speed')
+
+    const x = (window.innerWidth - e.pageX * speed) / 100
+    const y = (window.innerHeight - e.pageY * speed) /100
+
+    layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+
+  } )
+}
+
+// Accordion
+
+const accardion = document.querySelectorAll('.accordion__contentBox')
+accardion.forEach( item => {
+    item.onclick = () =>{
+        item.classList.toggle('active')
+    }
+})
+
 
 // Dropdown
 var x, i, j, l, ll, selElmnt, a, b, c;
@@ -98,37 +122,9 @@ then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
 
 
-// Play, pause video onclick
-
-let video = document.querySelector('.video')
-let btn = document.querySelector('.play')
-
-function Play() {
-  if (video.paused) {
-    video.play()
-    btn.src = '../img/pause.png'
-    btn.style.transition = 'all .3s ease'
-  } else {
-    video.pause()
-    btn.src = '../img/play.png'
-    btn.style.transition = 'all .3s ease'
-  }
-}
-
-function hideBtn() {
-  btn.style.opacity = '0'
-  btn.style.transition = 'all .3s ease'
-}
-
-function showBtn() {
-  btn.style.opacity = '1'
-  btn.style.transition = 'all .3s ease'
-}
-
-
 // Tab
-let tabs = document.querySelectorAll('.tab-btn'),
-  contents = document.querySelectorAll('.tab-body');
+let tabs = document.querySelectorAll('.plans .tab-btn'),
+  contents = document.querySelectorAll('.plans .tab-body');
 
 tabs.forEach((tab, index) => {
   tab.addEventListener('click', () => {
@@ -145,14 +141,30 @@ tabs.forEach((tab, index) => {
 })
 
 
+let tabs2 = document.querySelectorAll('.browser-tab .tab-btn'),
+  contents2 = document.querySelectorAll('.browser-tab .tab-body');
+
+  tabs2.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+      contents2.forEach((content) => {
+        content.classList.remove('active')
+    })
+    tabs2.forEach((tab) => {
+      tab.classList.remove('active')
+
+    })
+    contents2[index].classList.add('active')
+    tabs2[index].classList.add('active')
+  })
+})
+
+
 
 // // Swiper js
 var swiper = new Swiper(".mySwiper", {
-  freeMode: true,
-  spaceBetween: 38,
-  navigation: {
-    nextEl: '.next',
-    prevEl: '.prev',
+  slidesPerView: '3',
+  grid: {
+    rows: 2,
   },
   breakpoints: {
     0: {
@@ -168,39 +180,8 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 2.5,
     },
     1440: {
-      slidesPerView: 3.5
+      slidesPerView: 3
     },
-    1800: {
-      slidesPerView: 4
-    },
-    2000: {
-      slidesPerView: 5
-    },
-    2400: {
-      slidesPerView: 5.5
-    }
+    
   },
 });
-
-// Play, pause video on scroll
-
-let options = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 1.0
-}
-let callback = (entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.target.classList = 'video') {
-      if (entry.isIntersecting) {
-        entry.target.play()
-        btn.src = '../img/pause.png'
-      } else {
-        entry.target.pause()
-        btn.src = '../img/play.png'
-      }
-    }
-  })
-}
-let observer = new IntersectionObserver(callback, options)
-observer.observe(document.querySelector('.video'))

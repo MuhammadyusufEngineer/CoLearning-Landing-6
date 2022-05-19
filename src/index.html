@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gulp with TailwindCSS</title>
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
+
 <body class="overflow-x-hidden">
-   
-    <section>
+
+    <section class="pt-0 bg-[#F9FBFD]">
         <header class="relative z-40">
             <nav class="main-container flex-row justify-between items-center py-6">
-                <div class="flex lg:hidden w-full min-h-screen fixed top-0 left-[-100%] justify-center items-center bg-white z-50 duration-300 mobile-menu">
+                <div
+                    class="flex lg:hidden w-full min-h-screen fixed top-0 left-[-100%] justify-center items-center bg-white z-50 duration-300 mobile-menu">
                     <ul class="flex flex-col min-h-full select-none mobile_menu">
                         <li class="menu__item"><a class="menu__link underline-animation" href="#">Home</a></li>
                         <li class="menu__item dropdown-toggle cursor-pointer">
@@ -96,24 +99,856 @@
                             </div>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link text-blue hover:text-[#8d448b] underline-animation" href="#">Contacts</a>
+                            <a class="menu__link text-blue hover:text-[#8d448b] underline-animation"
+                                href="#">Contacts</a>
                         </li>
                     </ul>
                 </div>
-                <button class="btn-purple px-[25px] py-[13px] hover:bg-[#8a6289]  hidden lg:block">Register
-                    now</button>
+                <button class="btn-blue hidden lg:block">Purchase now</button>
                 <div
                     class="mobile-burger block lg:hidden relative z-50 right-0 w-6 h-6 bg-cover bg-no-repeat bg-center">
                 </div>
             </nav>
         </header>
-        <main></main>
+        <main class="flex flex-col items-center">
+            <div class="main-container">
+                <div class="mt-[68.5px] w-[100px] h-[100px] rounded-full flex items-center justify-center"
+                    style="box-shadow: 0px 15px 35px rgba(65, 104, 139, 0.12);">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+                <h1
+                    class="text-[30xp] leading-[125%] font-bold max-w-[851px] text-center tracking-[-1.375px] text-[#02073e] md:text-[36px] lg:text-[64px] mt-[30px] mb-[69px]">
+                    Create beautiful landing
+                    page in few minutes</h1>
+                <div class="relative">
+                    <div class="relative w-4/5 mx-auto">
+                        <img class="relative z-30" src="./img/hero.png" alt="mockup photo">
+                    </div>
+                    <img data-speed="-1" class="layer absolute -top-[20%] left-[7%] w-[3%] z-20" src="./img/piece.svg"
+                        alt="a piece of puzzle">
+                    <img data-speed="1" class="layer absolute -top-[50%] right-[5%] w-[3%] z-20" src="./img/chat.svg"
+                        alt="chat icon">
+                    <img data-speed="1" class="layer absolute -top-[6%] left-[20%] w-[15%] z-20" src="./img/waves.svg"
+                        alt="wave icon">
+                    <img data-speed="-1" class="layer absolute -top-[12%] right-0 w-[25%] z-20"
+                        src="./img/dot-pattern.svg" alt="dot pattern">
+                    <img data-speed="1" class="layer absolute bottom-0 left-[5%] w-[10%] z-20" src="./img/brain.svg"
+                        alt="brain icon">
+                    <img data-speed="2" class="layer absolute bottom-0 -left-[10%] w-[30%] z-20"
+                        src="./img/arrow-left.svg" alt="arrow left img">
+                    <img data-speed="-3" class="layer absolute bottom-0 -right-[10%] w-[30%] z-20"
+                        src="./img/arrow-right.svg" alt="arrow right img">
+                </div>
+            </div>
+        </main>
     </section>
 
-    
+    <section>
+        <h3 class="title-lg mb-[4.5px] px-3">What the features of product</h3>
+        <p class="main-paragraph text-center text-[#858B91] mb-[110px]">Features are highlighted here</p>
+        <div class="main-container flex flex-row flex-wrap xl:grid xl:grid-rows-2 grid-cols-3	 justify-around">
+            <div class="flex lg:flex-row mb-[80px] gap-[30px]">
+                <div>
+                    <img src="./img/layer.png" alt="three layers icon">
+                </div>
+                <div>
+                    <h6 class="title-sm">3D modeling & art</h6>
+                    <p class="main-description mb-[15px] max-w-[265px]">Get your info test delivered at home collect a
+                        sample from the your progress</p>
+                    <div class="flex items-center learn_more cursor-pointer">
+                        <a href="#" class="mr-[8px] font-medium text-base leading-[262%] text-[#3183FF]">Learn
+                            more</a><img src="./img/chevron-right.svg" alt="chevron-right">
+                    </div>
+                </div>
+            </div>
+            <div class="flex lg:flex-row mb-[80px] gap-[30px]">
+                <div>
+                    <img src="./img/chain.png" alt="chain icon">
+                </div>
+                <div>
+                    <h6 class="title-sm">3D modeling & art</h6>
+                    <p class="main-description mb-[15px] max-w-[265px]">Get your info test delivered at home collect a
+                        sample from the your progress</p>
+                    <div class="flex items-center learn_more cursor-pointer">
+                        <a href="#" class="mr-[8px] font-medium text-base leading-[262%] text-[#3183FF]">Learn
+                            more</a><img src="./img/chevron-right.svg" alt="chevron-right">
+                    </div>
+                </div>
+            </div>
+            <div class="flex lg:flex-row mb-[80px] gap-[30px]">
+                <div>
+                    <img src="./img/lego.png" alt="lego icon">
+                </div>
+                <div>
+                    <h6 class="title-sm">3D modeling & art</h6>
+                    <p class="main-description mb-[15px] max-w-[265px]">Get your info test delivered at home collect a
+                        sample from the your progress</p>
+                    <div class="flex items-center learn_more cursor-pointer">
+                        <a href="#" class="mr-[8px] font-medium text-base leading-[262%] text-[#3183FF]">Learn
+                            more</a><img src="./img/chevron-right.svg" alt="chevron-right">
+                    </div>
+                </div>
+            </div>
+            <div class="flex lg:flex-row mb-[80px] gap-[30px]">
+                <div>
+                    <img src="./img/vector.png" alt="vector icon">
+                </div>
+                <div>
+                    <h6 class="title-sm">3D modeling & art</h6>
+                    <p class="main-description mb-[15px] max-w-[265px]">Get your info test delivered at home collect a
+                        sample from the your progress</p>
+                    <div class="flex items-center learn_more cursor-pointer">
+                        <a href="#" class="mr-[8px] font-medium text-base leading-[262%] text-[#3183FF]">Learn
+                            more</a><img src="./img/chevron-right.svg" alt="chevron right">
+                    </div>
+                </div>
+            </div>
+            <div class="flex lg:flex-row mb-[80px] gap-[30px]">
+                <div>
+                    <img src="./img/infinity.png" alt="infinity icon">
+                </div>
+                <div>
+                    <h6 class="title-sm">3D modeling & art</h6>
+                    <p class="main-description mb-[15px] max-w-[265px]">Get your info test delivered at home collect a
+                        sample from the your progress</p>
+                    <div class="flex items-center learn_more cursor-pointer">
+                        <a href="#" class="mr-[8px] font-medium text-base leading-[262%] text-[#3183FF]">Learn
+                            more</a><img src="./img/chevron-right.svg" alt="chevron right">
+                    </div>
+                </div>
+            </div>
+            <div class="flex lg:flex-row mb-[80px] gap-[30px]">
+                <div>
+                    <img src="./img/blocks.png" alt="4 blocks icon">
+                </div>
+                <div>
+                    <h6 class="title-sm">3D modeling & art</h6>
+                    <p class="main-description mb-[15px] max-w-[265px]">Get your info test delivered at home collect a
+                        sample from the your progress</p>
+                    <div class="flex items-center learn_more cursor-pointer">
+                        <a href="#" class="mr-[8px] font-medium text-base leading-[262%] text-[#3183FF]">Learn
+                            more</a><img src="./img/chevron-right.svg" alt="chevron right">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-container items-start flex-col 2xl:flex-row">
+            <div class="w-full 2xl:w-9/12 mx-auto">
+                <img class="mx-auto" src="./img/Browser.png" alt="browser mockup">
+            </div>
+            <div class="w-full flex flex-col items-center 2xl:items-start 2xl:w-4/12">
+                <div class="main-paragraph text-center 2xl:text-left text-[#8D448B]">Core Features</div>
+                <h2 class="title-xl text-center 2xl:text-left max-w-[481px] mb-[65px]">Smart Jackpots that you may love
+                    this</h2>
+                <div class="flex flex-wrap justify-evenly w-full 2xl:flex-col flex-row">
+                    <div class="flex lg:flex-row mb-[67px] gap-[30px]">
+                        <div>
+                            <img src="./img/vector.png" alt="vector icon">
+                        </div>
+                        <div>
+                            <h6 class="title-sm">3D modeling & art</h6>
+                            <p class="main-description text-[15px] leading-[173%] mb-[15px] max-w-[265px]">Get your info
+                                test delivered at home collect a sample from the your progress</p>
+                            <div class="flex items-center learn_more cursor-pointer">
+                                <a href="#" class="mr-[8px] font-medium text-base leading-[262%] text-[#3183FF]">Learn
+                                    more</a><img src="./img/chevron-right.svg" alt="chevron right">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex lg:flex-row mb-[67px] gap-[30px]">
+                        <div>
+                            <img src="./img/blocks.png" alt="4 blocks icon">
+                        </div>
+                        <div>
+                            <h6 class="title-sm">3D modeling & art</h6>
+                            <p class="main-description text-[15px] leading-[173%] mb-[15px] max-w-[265px]">Get your info
+                                test delivered at home collect a sample from the your progress</p>
+                            <div class="flex items-center learn_more cursor-pointer">
+                                <a href="#" class="mr-[8px] font-medium text-base leading-[262%] text-[#3183FF]">Learn
+                                    more</a><img src="./img/chevron-right.svg" alt="chevron right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-container flex-col lg:flex-row">
+            <div class="w-full lg:w-1/2 flex flex-col sm:items-center lg:items-start mb-20">
+                <p class="main-paragraph text-left text-[#8D448B] mb-[5px]">Behind the scenes</p>
+                <h2 class="title-xl text-left max-w-[510px] mb-[20px]">Smart Jackpots that you may love this</h2>
+                <p class="main-paragraph text-left sm:text-center lg:text-left max-w-[454px]  mb-[40px]">Get your tests
+                    delivered at let home collect sample from the victory of the managments that supplies best design
+                    system guidelines ever. Get your tests delivered at let home collect sample.</p>
+                <button class="btn-blue">Explore more</button>
+            </div>
+            <div class="w-4/5 lg:w-1/2">
+                <img src="./img/langs.png" alt="programming languages">
+            </div>
+        </div>
+    </section>
+
+    <section class="hidden md:block bg-[#F9FAFC] pb-0 relative z-20 -bottom-[150px]">
+        <h3 class="title-lg">What the features of product</h3>
+        <p class="main-paragraph text-center mb-[113px] text-[#858B91]">Introducing all screen details</p>
+        <div class="main-container browser-tab">
+            <div class="flex w-full">
+                <div class="browser-tab__content tab-btn active">
+                    <img src="./img/dollar.svg" alt="dollar icon">
+                    <p class="text-[#0F2137] font-bold text-lg leading-[167%]">Budget Overview</p>
+                </div>
+                <div class="browser-tab__content tab-btn">
+                    <img src="./img/settings.svg" alt="settings icon">
+                    <p class="text-[#0F2137] font-bold text-lg leading-[167%]">Budget Overview</p>
+                </div>
+                <div class="browser-tab__content tab-btn">
+                    <img src="./img/pie-chart.svg" alt="pie chart icon">
+                    <p class="text-[#0F2137] font-bold text-lg leading-[167%]">Budget Overview</p>
+                </div>
+                <div class="browser-tab__content tab-btn">
+                    <img src="./img/portfolio.svg" alt="portfolio icon">
+                    <p class="text-[#0F2137] font-bold text-lg leading-[167%]">Budget Overview</p>
+                </div>
+
+            </div>
+            <div class="max-h-[428px] overflow-y-hidden relative w-full">
+                <div class="browser-tab__body tab-body active">
+                    <img src="./img/browser-1.png" alt="browser mockup">
+                </div>
+                <div class="browser-tab__body tab-body">
+                    <img src="./img/browser-4.png" alt="browser mockup">
+                </div>
+                <div class="browser-tab__body tab-body">
+                    <img src="./img/browser-3.png" alt="browser mockup">
+                </div>
+                <div class="browser-tab__body tab-body">
+                    <img src="./img/browser-2.png" alt="browser mockup">
+                </div>
+            </div>
+            <div data-speed="1" class="layer absolute w-[10%] bottom-0 -right-[10%]">
+                <img src="./img/dot-pattern.svg" alt="dot pattern">
+            </div>
+        </div>
+    </section>
+
+    <section class="block md:hidden bg-[#F9FAFC] ">
+        <h3 class="title-lg">What the features of product</h3>
+        <p class="main-paragraph text-center mb-[50px] text-[#858B91]">Introducing all screen details</p>
+        <div>
+            <div class="flex flex-col items-center">
+                <div class="accordion__contentBox active">
+                    <div class="accordion__label">
+                        <div class="accordion__icon">
+                            <img src="./img/dollar.svg" alt="dollar icon">
+                        </div>
+                        <h6 class="accordion__title">Budget overview</h6>
+                        <div class="imgBox">
+                            <img src="./img/chevron-right-blue.svg" alt="chevron-right">
+                        </div>
+                    </div>
+                    <div class="accordion__content browser">
+                        <img src="./img/browser-1.png" alt="browser mockup">
+                    </div>
+                </div>
+                <div class="accordion__contentBox">
+                    <div class="accordion__label">
+                        <div class="accordion__icon">
+                            <img src="./img/settings.svg" alt="settings icon">
+                        </div>
+                        <h6 class="accordion__title">Budget overview</h6>
+                        <div class="imgBox">
+                            <img src="./img/chevron-right-blue.svg" alt="chevron-right">
+                        </div>
+                    </div>
+                    <div class="accordion__content browser">
+                        <img src="./img/browser-2.png" alt="browser mockup">
+                    </div>
+                </div>
+                <div class="accordion__contentBox">
+                    <div class="accordion__label">
+                        <div class="accordion__icon">
+                            <img src="./img/pie-chart.svg" alt="pie-chart">
+                        </div>
+                        <h6 class="accordion__title">Budget overview</h6>
+                        <div class="imgBox">
+                            <img src="./img/chevron-right-blue.svg" alt="chevron-right">
+                        </div>
+                    </div>
+                    <div class="accordion__content browser">
+                        <img src="./img/browser-3.png" alt="browser mockup">
+                    </div>
+                </div>
+                <div class="accordion__contentBox">
+                    <div class="accordion__label">
+                        <div class="accordion__icon">
+                            <img src="./img/portfolio.svg" alt="portfolio icon">
+                        </div>
+                        <h6 class="accordion__title">Budget overview</h6>
+                        <div class="imgBox">
+                            <img src="./img/chevron-right-blue.svg" alt="chevron-right">
+                        </div>
+                    </div>
+                    <div class="accordion__content browser">
+                        <img src="./img/browser-4.png" alt="browser mockup">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="plans pt-[268px] relative z-10">
+        <h3 class="title-lg text-center">What deal siut you perfect</h3>
+        <p class="main-paragraph text-center text-[#858B91] mb-[52px]">Meet our pricing plan</p>
+        <div
+            class="relative left-1/2 -translate-x-1/2 flex flex-row w-72 rounded-md justify-center items-center mb-[50px] z-10 p-1 bg-[#f8f8fa] border border-solid border-[#E8E9EB]">
+            <div
+                class="relative w-1/2 p-3 text-center rounded-md text-black text-sm font-medium cursor-pointer tab-btn active">
+                Monthly plan
+            </div>
+            <div
+                class="relative w-1/2 p-3 text-center rounded-md text-black text-sm font-medium cursor-pointer tab-btn">
+                Annual
+                plan</div>
+        </div>
+        <div class="main-container relative min-h-[500px]">
+            <div class="plans__wrapper tab-body active">
+                <div class="plans__box">
+                    <div class="plans__box-about">
+                        <div class="pb-[35px]">
+                            <img src="./img/group.svg" alt="group people icon">
+                        </div>
+                        <h5 class="title-md">Starter Pack</h5>
+                        <ul class="mb-[50px]">
+                            <li>
+                                <img src="./img/verify.svg" alt="verify icon">
+                                Ultimate access to all course, exercises and assessments
+                            </li>
+                            <li>
+                                <img src="./img/verify.svg" alt="verify icon">
+                                Ultimate access to all course, exercises and assessments
+                            </li>
+                            <li>
+                                <img src="./img/verify.svg" alt="verify icon">
+                                Ultimate access to all course, exercises and assessments
+                            </li>
+                            <li class="deny">
+                                <img src="./img/verify.svg" alt="verify icon">
+                                Ultimate access to all course, exercises and assessments
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="plans__price">
+                        <div>
+                            <p>Starting from</p>
+                            <p>29.99/mo</pclass=>
+                        </div>
+                        <a href="#">
+                            <img src="./img/right.svg" alt="right arrow">
+                        </a>
+                    </div>
+                </div>
+                <div class="plans__box relative">
+                    <div
+                        class="flex items-center justify-center rounded-[3px] absolute -top-[15px] left-[40px] bg-[#8D448B] px-[8px]">
+                        <p class="text-white font-bold text-sm leading-[28px]">Recommend</p>
+                    </div>
+                    <div class="plans__box-about">
+                        <div class="pb-[35px]">
+                            <img src="./img/group.svg" alt="group people icon">
+                        </div>
+                        <h5 class="title-md">Premium Pack</h5>
+                        <ul class="mb-[50px]">
+                            <li>
+                                <img src="./img/verify.svg" alt="verify icon">
+                                Ultimate access to all course, exercises and assessments
+                            </li>
+                            <li>
+                                <img src="./img/verify.svg" alt="verify icon">
+                                Ultimate access to all course, exercises and assessments
+                            </li>
+                            <li>
+                                <img src="./img/verify.svg" alt="verify icon">
+                                Ultimate access to all course, exercises and assessments
+                            </li>
+                            <li>
+                                <img src="./img/verify.svg" alt="verify icon">
+                                Ultimate access to all course, exercises and assessments
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="plans__price">
+                        <div>
+                            <p>Starting from</p>
+                            <p>29.99/mo</pclass=>
+                        </div>
+                        <a href="#">
+                            <img src="./img/right.svg" alt="right arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="plans__wrapper tab-body">
+                <div class="plans__box">
+                    <div class="plans__box-about">
+                        <div class="pb-[35px]">
+                            <img src="./img/group.svg" alt="group people">
+                        </div>
+                        <h5 class="title-md">Starter Pro</h5>
+                        <ul class="mb-[50px]">
+                            <li>
+                                <img src="./img/verify.svg" alt="verify icon">
+                                Ultimate access to all course, exercises and assessments
+                            </li>
+                            <li>
+                                <img src="./img/verify.svg" alt="verify icon">
+                                Ultimate access to all course, exercises and assessments
+                            </li>
+                            <li>
+                                <img src="./img/verify.svg" alt="verify icon">
+                                Ultimate access to all course, exercises and assessments
+                            </li>
+                            <li class="deny">
+                                <img src="./img/verify.svg" alt="verify icon">
+                                Ultimate access to all course, exercises and assessments
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="plans__price">
+                        <div>
+                            <p>Starting from</p>
+                            <p>29.99/mo</pclass=>
+                        </div>
+                        <a href="#">
+                            <img src="./img/right.svg" alt="right arrow">
+                        </a>
+                    </div>
+                </div>
+                <div class="plans__box relative">
+                    <div
+                        class="flex items-center justify-center rounded-[3px] absolute -top-[15px] left-[40px] bg-[#8D448B] px-[8px]">
+                        <p class="text-white font-bold text-sm leading-[28px]">Recommend</p>
+                    </div>
+                    <div class="plans__box-about">
+                        <div class="pb-[35px]">
+                            <img src="./img/group.svg" alt="group people">
+                        </div>
+                        <h5 class="title-md">Premium Pro</h5>
+                        <ul class="mb-[50px]">
+                            <li>
+                                <img src="./img/verify.svg" alt="verify icon">
+                                Ultimate access to all course, exercises and assessments
+                            </li>
+                            <li>
+                                <img src="./img/verify.svg" alt="verify icon">
+                                Ultimate access to all course, exercises and assessments
+                            </li>
+                            <li>
+                                <img src="./img/verify.svg" alt="verify icon">
+                                Ultimate access to all course, exercises and assessments
+                            </li>
+                            <li>
+                                <img src="./img/verify.svg" alt="verify icon">
+                                Ultimate access to all course, exercises and assessments
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="plans__price">
+                        <div>
+                            <p>Starting from</p>
+                            <p>29.99/mo</pclass=>
+                        </div>
+                        <a href="#">
+                            <img src="./img/right.svg" alt="right arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-[#F4F4F6]">
+        <h3 class="title-lg mb-[4.5px]">What client say about us</h3>
+        <p class="main-paragraph text-center text-[#858B91] mb-[70.5px]">Customer testimonials</p>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide min-h-[307px] bg-white rounded-[5px] mb-5 mr-5 pt-[25px] px-[35px] pb-[33px]">
+                    <p class="main-description mb-[34px]"> Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio. Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio. Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio. Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio. . </p>
+                    <div class="flex items-center gap-[12px]">
+                        <div>
+                            <img src="./img/user-1.png" alt="user avatar">
+                        </div>
+                        <div>
+                            <p class="text-[17px] text-[#343D48]">Minnie Hom</p>
+                            <p class="text-[14px] text-[#4F96FF]">@hi.veona</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-white min-h-[250px] rounded-[5px] mb-5 mr-5 pt-[25px] px-[35px] pb-[33px]">
+                    <p class="main-description mb-[34px]"> Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio.Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio. </p>
+                    <div class="flex items-center gap-[12px]">
+                        <div>
+                            <img src="./img/user-1.png" alt="user avatar">
+                        </div>
+                        <div>
+                            <p class="text-[17px] text-[#343D48]">Minnie Hom</p>
+                            <p class="text-[14px] text-[#4F96FF]">@hi.veona</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-white min-h-[307px] rounded-[5px] mb-5 mr-5 pt-[25px] px-[35px] pb-[33px]">
+                    <p class="main-description mb-[34px]"> Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio. Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio. Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio. </p>
+                    <div class="flex items-center gap-[12px]">
+                        <div>
+                            <img src="./img/user-1.png" alt="user avatar">
+                        </div>
+                        <div>
+                            <p class="text-[17px] text-[#343D48]">Minnie Hom</p>
+                            <p class="text-[14px] text-[#4F96FF]">@hi.veona</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-white min-h-[181px] rounded-[5px] mb-5 mr-5 pt-[25px] px-[35px] pb-[33px]">
+                    <p class="main-description mb-[34px]"> Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio. </p>
+                    <div class="flex items-center gap-[12px]">
+                        <div>
+                            <img src="./img/user-1.png" alt="user avatar">
+                        </div>
+                        <div>
+                            <p class="text-[17px] text-[#343D48]">Minnie Hom</p>
+                            <p class="text-[14px] text-[#4F96FF]">@hi.veona</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-white min-h-[220px]] rounded-[5px] mb-5 mr-5 pt-[25px] px-[35px] pb-[33px]">
+                    <p class="main-description mb-[34px]"> Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio. </p>
+                    <div class="flex items-center gap-[12px]">
+                        <div>
+                            <img src="./img/user-1.png" alt="user avatar">
+                        </div>
+                        <div>
+                            <p class="text-[17px] text-[#343D48]">Minnie Hom</p>
+                            <p class="text-[14px] text-[#4F96FF]">@hi.veona</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bg-white min-h-[252px] rounded-[5px] mb-5 mr-5 pt-[25px] px-[35px] pb-[33px]">
+                    <p class="main-description mb-[34px]"> Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio. Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio. Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio. . </p>
+                    <div class="flex items-center gap-[12px]">
+                        <div>
+                            <img src="./img/user-1.png" alt="user avatar">
+                        </div>
+                        <div>
+                            <p class="text-[17px] text-[#343D48]">Minnie Hom</p>
+                            <p class="text-[14px] text-[#4F96FF]">@hi.veona</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="swiper-slide bg-white -mt-[60px] min-h-[220px] rounded-[5px] mb-5 mr-5 pt-[25px] px-[35px] pb-[33px]">
+                    <p class="main-description mb-[34px]"> Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio.Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio. </p>
+                    <div class="flex items-center gap-[12px]">
+                        <div>
+                            <img src="./img/user-1.png" alt="user avatar">
+                        </div>
+                        <div>
+                            <p class="text-[17px] text-[#343D48]">Minnie Hom</p>
+                            <p class="text-[14px] text-[#4F96FF]">@hi.veona</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-white min-h-[247px] rounded-[5px] mb-5 mr-5 pt-[25px] px-[35px] pb-[33px]">
+                    <p class="main-description mb-[34px]"> Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio.Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio.Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio. </p>
+                    <div class="flex items-center gap-[12px]">
+                        <div>
+                            <img src="./img/user-1.png" alt="user avatar">
+                        </div>
+                        <div>
+                            <p class="text-[17px] text-[#343D48]">Minnie Hom</p>
+                            <p class="text-[14px] text-[#4F96FF]">@hi.veona</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="swiper-slide bg-white -mt-[130px] min-h-[340px] rounded-[5px] mb-5 mr-5 pt-[25px] px-[35px] pb-[33px]">
+                    <p class="main-description mb-[34px]"> Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio.Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio.Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio.Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio.Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio. </p>
+                    <div class="flex items-center gap-[12px]">
+                        <div>
+                            <img src="./img/user-1.png" alt="user avatar">
+                        </div>
+                        <div>
+                            <p class="text-[17px] text-[#343D48]">Minnie Hom</p>
+                            <p class="text-[14px] text-[#4F96FF]">@hi.veona</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="swiper-slide bg-white -mt-[112px] min-h-[218px] rounded-[5px] mb-5 mr-5 pt-[25px] px-[35px] pb-[33px]">
+                    <p class="main-description mb-[34px]"> Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Mollitia, optio. </p>
+                    <div class="flex items-center gap-[12px]">
+                        <div>
+                            <img src="./img/user-1.png" alt="user avatar">
+                        </div>
+                        <div>
+                            <p class="text-[17px] text-[#343D48]">Minnie Hom</p>
+                            <p class="text-[14px] text-[#4F96FF]">@hi.veona</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="title-lg mb-[4.5px]">Popular Blog Post we updated</h3>
+        <p class="main-paragaph text-center text-[#858B91] mb-[80.5px]">Update newsfeed blog</p>
+        <div class="main-container">
+            <div class="grid-parent">
+                <div class="grid-container ">
+                    <div class="grid-container__item overflow-visible">
+                        <div class="grid-container__img-container after:bg-none">
+                            <img class="grid-container__img" src="./img/blog-1.png" alt="girl sitting laptop">
+                        </div>
+                        <div class="relative z-30">
+                            <p class="text-blue font-bold text-[18px] leading-[167%] -tracking-[0.2px] mt-[12px] mb-[15px]"> How to work with prototype design with adobe xd featuring tools</p>
+                            <p class="text-blue font-normal leading-[188%] text-[16px] opacity-60">The 2019 Innovation by Design Awards honor the designers and businesses solving the problems of today and tomorrow. It is one of the most sought-after design</p>
+                            <div class="flex items-center learn_more cursor-pointer">
+                                <a href="#" class="mr-[8px] font-medium text-base leading-[262%] text-[#3183FF]">Learn
+                                    more</a><img src="./img/chevron-right.svg" alt="chevron right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-container rounded-[5px] bg-[#F0F0F4]">
+                    <div class="grid-container__item">
+                        <div class="grid-container__img-container after:bg-none">
+                            <p class="p-[25px] text-blue font-medium text-[20px] leading-[175%] -tracking-[0.2px]">
+                                Antibias receives honorable gift mention at Fast Company’s most Innovation by Design
+                                Awards</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-container__item">
+                        <div class="grid-container__img-container">
+                            <img class="grid-container__img" src="./img/blog-3.png" alt="man and woman">
+                        </div>
+                        <p class="grid-container__description">Multiple task wireframing with team management perform better</p>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-container__item overflow-visible">
+                        <div class="grid-container__img-container after:bg-none">
+                            <img class="grid-container__img" src="./img/blog-2.png" alt="laptop">
+                        </div>
+                        <div class="relative z-30">
+                            <p class="text-blue font-bold text-[18px] leading-[167%] -tracking-[0.2px] mt-[12px] mb-[15px]"> Multiple arbard prototype with Figma</p>
+                            <p class="text-blue font-normal leading-[188%] text-[16px] opacity-60">Beyond launched antibias, a Chrome extension that replaces LinkedIn profile photos</p>
+                            <div class="flex items-center learn_more cursor-pointer">
+                                <a href="#" class="mr-[8px] font-medium text-base leading-[262%] text-[#3183FF]">Learn
+                                    more</a><img src="./img/chevron-right.svg" alt="chevron right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-container__item">
+                        <div class="grid-container__img-container">
+                            <img class="grid-container__img" src="./img/blog-4.png" alt="laptop and flower">
+                        </div>
+                        <p class="grid-container__description">Team presentation with latest user interface & experience reach more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-32">
+        <h3 class="px-1 title-lg mb-[4.5px]">Frequently Asked Questions</h3>
+        <p class="px-1 main-paragraph text-center mb-[80.5px] opacity-70">Ask question and meet</p>
+        <div class="main-container lg:flex-row">
+            <div class="w-full flex flex-col items-center sm:items-start sm:w-1/3 mb-20 mr-5">
+                <h4
+                    class="px-1 font-bold text-[24px] text-center sm:text-left max-w-[361px] leading-[167%] -tracking-[1px]">
+                    Do you have any questions? Please ask here we ready to support</h4>
+                <p class="px-1 main-description text-center sm:text-left max-w-[322px] mb-[40px] opacity-70">If your
+                    question is not list here, please feel free to make a manual support.</p>
+                <button class="btn-blue">Ask your question</button>
+            </div>
+            <div class="w-full sm:w-4/6">
+                <div class="flex flex-col items-center">
+                    <div class="accordion__contentBox active">
+                        <div class="accordion__label">
+                            <h6 class="accordion__title">How do I download the
+                                App?</h6>
+                            <div class="imgBox">
+                                <img src="./img/chevron-right-blue.svg" alt="chevron-right">
+                            </div>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="main-description opacity-70  text-left pb-8">To download the Scoot app, you can
+                                search “Scoot” in
+                                both the App and Google Play stores. An
+                                even simpler way to do it would be to click the relevant link at the bottom of this page
+                                and
+                                you’ll be re-directed to the correct page.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__contentBox">
+                        <div class="accordion__label">
+                            <h6 class="accordion__title">How much does it cost to be a credit card merchant?</h6>
+                            <div class="imgBox">
+                                <img src="./img/chevron-right-blue.svg" alt="chevron">
+                            </div>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="main-description opacity-70  text-left pb-8">To download the Scoot app, you can
+                                search “Scoot” in
+                                both the App and Google Play stores. An
+                                even simpler way to do it would be to click the relevant link at the bottom of this page
+                                and
+                                you’ll be re-directed to the correct page.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__contentBox">
+                        <div class="accordion__label">
+                            <h6 class="accordion__title">How can I open a merchant account?</h6>
+                            <div class="imgBox">
+                                <img src="./img/chevron-right-blue.svg" alt="chevron-right">
+                            </div>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="main-description opacity-70  text-left pb-8">To download the Scoot app, you can
+                                search “Scoot” in
+                                both the App and Google Play stores. An
+                                even simpler way to do it would be to click the relevant link at the bottom of this page
+                                and
+                                you’ll be re-directed to the correct page.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__contentBox">
+                        <div class="accordion__label">
+                            <h6 class="accordion__title">How long does the application take?</h6>
+                            <div class="imgBox">
+                                <img src="./img/chevron-right-blue.svg" alt="chevron-right">
+                            </div>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="main-description opacity-70  text-left pb-8">To download the Scoot app, you can
+                                search “Scoot” in
+                                both the App and Google Play stores. An
+                                even simpler way to do it would be to click the relevant link at the bottom of this page
+                                and
+                                you’ll be re-directed to the correct page.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__contentBox">
+                        <div class="accordion__label">
+                            <h6 class="accordion__title">Can I make payment outside of Hong Kong?</h6>
+                            <div class="imgBox">
+                                <img src="./img/chevron-right-blue.svg" alt="chevron-right">
+                            </div>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="main-description opacity-70  text-left pb-8">To download the Scoot app, you can
+                                search “Scoot” in
+                                both the App and Google Play stores. An
+                                even simpler way to do it would be to click the relevant link at the bottom of this page
+                                and
+                                you’ll be re-directed to the correct page.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#020718] pt-16">
+        <div class="main-container">
+            <h3 class="title-lg text-white mb-[5px]">Subscribe to get best offers.</h3>
+            <p class="main-paragraph text-white opacity-60">By subscribing with your mail, you will agree with terms</p>
+            <div class="flex flex-col md:flex-row items-center w-full sm:w-[555px] mt-[50px] gap-[15px]">
+                <input class="bg-[#161b2a] h-[60px] w-full sm:w-[380px] outline-none text-white pl-5 rounded-[5px]"
+                    type="email" placeholder="Enter your email">
+                <button
+                    class="bg-white hover:bg-[#d6d4d4] h-[60px] w-full sm:w-[160px] text-[#020718] rounded-[5px]">Subscribe
+                    us</button>
+            </div>
+            <hr class="bg-white opacity-[0.15] h-[1px] w-full mt-[140px] mb-5">
+            <div class="flex flex-col xl:flex-row items-center justify-between w-full">
+                <div class="flex flex-col lg:flex-row items-center gap-3 mb-10">
+                    <div
+                        class="relative left-0 sm:left-1/2 flex items-center gap-[14px] justify-start sm:translate-x-[-50%] md:left-0 md:translate-x-0 z-50">
+                        <div><img src="./img/logo.svg" alt="logo img and StartupLanding txt"></div>
+                        <p class="font-bold text-xl text-white opacity-80">StartupLanding</p>
+                    </div>
+                    <p class="font-normal text-sm text-white opacity-60">Copyright by <span class="year"></span> Redq,
+                        Inc</p>
+                </div>
+                <div class="max-w-[400px] block mb-10">
+                    <ul class="footer-menu flex flex-col items-center sm:flex-row justify-between select-none">
+                        <li class="menu__item">
+                            <a class="menu__link underline-animation" href="#">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link underline-animation" href="#">Advertise</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link underline-animation" href="#">Supports</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link underline-animation" href="#">Marketing</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link underline-animation" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
     <!-- Swiper.js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  
+
     <!-- My.js -->
     <script src="./js/scripts.js"></script>
 

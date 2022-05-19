@@ -52,3 +52,4 @@ To change the path of files and destination/build folder, edit options in **conf
 }
 ```
 # Gulp-with-TailwindCSS
+# CoLearning-Landing-6
